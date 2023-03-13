@@ -90,14 +90,14 @@ p {
 }
 
 body {
-    background-color: black;
+    background-color: mediumslateblue;
 }
 
 [class^="a"] {
     background-color: cornsilk;
     height: 200px;
     margin: 60px;
-    padding: 20px;
+    padding: 200px;
     border-radius: 10%;
     align-content: center;
     text-align: center;
