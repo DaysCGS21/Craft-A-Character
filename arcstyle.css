@@ -1,0 +1,75 @@
+.racgrid {
+    display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(10, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: darkorange;
+    padding: 15px;
+}
+
+.rcimage {
+    grid-area: 1 / 1 / 7 / 5;
+    
+}
+
+.rcname {
+    grid-area: 1 / 5 / 3 / 11;
+   
+}
+
+.rcdescr {
+    grid-area: 3 / 5 / 7 / 11;
+   
+}
+
+.qualities {
+    grid-area: 7 / 1 / 9 / 6;
+    
+}
+
+.flaws {
+    grid-area: 7 / 6 / 9 / 11;
+    
+}
+
+.rcslide {
+    grid-area: 9 / 1 / 11 / 11;
+    
+}
+
+img {
+    width: 100px;
+}
+
+.emblem {
+    float:left;
+    margin-right: 30px;
+    padding-top: 20px;
+}
+
+#arctype {
+    text-align: center;
+    padding-top: 0px;
+    font-size: 50pt
+}
+
+[class*="rc"], .qualities, .flaws {
+    border-radius: 15px;
+    background-color: #f7c76c;
+    padding: 30px;
+}
+
+body {
+    background-color: #343333;
+}
+
+.typesampl {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+}

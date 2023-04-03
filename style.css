@@ -43,14 +43,14 @@ nav.navi a:hover {
     font-style: bold;
 }
 
-.homentro, .whatarc, .moredet {
+.homentro, .whatarc, .moredet, .ColorNtroduction, .styletitle, .makeintro, .gallintro, .feebkintro {
     padding: 30px;
     border-left-style: dashed;
     border-right-style: dashed;
 }
 
 .cyc, .instructarc {
-    text-align: center;
+    text-align: left;
     font-size: 30pt;
 }
 
@@ -197,4 +197,8 @@ body {
 }
 .holder {
     height: 300px;
+    width: auto;
+    float: left;
+    margin-right: 20px;
+    
 }

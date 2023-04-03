@@ -1,0 +1,26 @@
+.paregrid {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+margin: 15px; 
+margin-right: 100px;
+margin-left: 100px;  
+}
+
+.dos-column {
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: lavender;
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.dont-column {
+    grid-area: 1 / 2 / 4 / 3;
+    background-color: lavender;
+    margin-left: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}

@@ -1,0 +1,56 @@
+.entrygrid {
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+margin: 15px; 
+margin-right: 100px;
+margin-left: 100px;  
+}
+
+.options {
+     grid-area: 1 / 1 / 2 / 4;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.entry {
+    grid-area: 2 / 1 / 3 / 4;
+     margin: 20px;
+       margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.feedmit {
+    grid-area: 3 / 2 / 4 / 3;
+     margin: 20px;
+       margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.butnr {
+  float: left;
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}

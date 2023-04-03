@@ -1,0 +1,74 @@
+.chargrid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr repeat(2, 2fr) repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+margin: 15px; 
+margin-right: 100px;
+margin-left: 100px;
+}
+
+.imagry {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.chname {
+    grid-area: 1 / 2 / 2 / 4;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.goods {
+     grid-area: 2 / 2 / 3 / 3;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.bads {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.chdets {
+     grid-area: 3 / 1 / 4 / 2;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.chsum {
+    grid-area: 3 / 2 / 4 / 4;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.chemblms {
+   grid-area: 4 / 2 / 5 / 3;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.choiceopt {
+   grid-area: 5 / 2 / 6 / 3;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+}

@@ -1,0 +1,35 @@
+.cstentrygrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 3fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin: 15px; 
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.entryimg {
+    grid-area: 1 / 1 / 3 / 2;
+    padding: 20px;
+    margin: 15px;
+}
+
+.cstname {
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 20px;
+    margin: 15px;
+}
+
+.cstsum {
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 20px;
+    margin: 15px;
+}
+
+.entryimage {
+    width:100%;
+}

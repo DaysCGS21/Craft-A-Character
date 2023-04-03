@@ -1,0 +1,57 @@
+.stylegrid {
+   display: grid;
+grid-template-columns: 2fr repeat(5, 1fr);
+grid-template-rows: repeat(8, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px; 
+margin-left: 100px;
+    margin-right: 100px;
+    background-color: lavender;
+    padding: 15px;
+}
+
+.model {
+    grid-area: 1 / 1 / 9 / 2;
+    background-color: #5f4474;
+    border-radius: 15px;
+    
+}
+
+.hair {
+    grid-area: 1 / 3 / 3 / 6;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.Colors {
+    grid-area: 3 / 4 / 5 / 7;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.Clothing {
+    grid-area: 5 / 3 / 7 / 6;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.Features {
+    grid-area: 7 / 4 / 9 / 7;
+    background-color: #5f4474;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.stylemodel {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+}

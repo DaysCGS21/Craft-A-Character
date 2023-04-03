@@ -1,0 +1,68 @@
+.containter {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.colorwheel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[class^="clr"] {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.clr1 {
+    background-color: red;
+}
+
+.clr2 {
+    background-color: orange;
+}
+
+.clr3 {
+    background-color: yellow;
+}
+
+.clr4 {
+    background-color: green;
+}
+
+.clr5 {
+    background-color: blue;
+}
+
+.clr6 {
+    background-color: purple;
+}
+
+.clr7 {
+    background-color: pink;
+}
+
+.clr8 {
+    background-color: brown;
+}
+
+.clr9 {
+    background-color: black;
+}
+
+.clr10 {
+    background-color: white;
+}
+
+.colorxplain {
+  margin-left: 200px;
+  margin-right: 200px;
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+    border: 3px dashed azure;
+}
