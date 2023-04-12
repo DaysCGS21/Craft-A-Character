@@ -11,16 +11,25 @@ margin-left: 100px;
 
 .dos-column {
     grid-area: 1 / 1 / 4 / 2;
-    background-color: lavender;
+    background-color: #fbfbf9;
     margin-right: 20px;
     padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 15px;
 }
 
 .dont-column {
     grid-area: 1 / 2 / 4 / 3;
-    background-color: lavender;
+    background-color: #fbfbf9;
     margin-left: 20px;
     padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 15px;
+}
+
+.dotitle {
+    background-color: #550cb7;
+    border-radius: 10px;
 }

@@ -1,37 +1,32 @@
 .galgrid {
 display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 5px;
-grid-row-gap: 5px;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 margin: 15px; 
 margin-right: 100px;
 margin-left: 100px;  
 }
 
 .galset1 {
-    grid-area: 1 / 1 / 2 / 2;
-    background-color: azure;
+    grid-area: 1 / 1 / 3 / 6;
+    background-color: #fbfbf9;
     border-radius: 15px;
     padding: 15px;
-}
-}
-
-.galset2 {
-     grid-area: 2 / 1 / 3 / 2;
-    background-color: azure;
-    border-radius: 15px;
-    padding: 15px;
-    border: 3px solid azure;
-}
-
-.galset3 {
-    grid-area: 3 / 1 / 4 / 2;
-    background-color: azure;
-    border-radius: 15px;
-    padding: 15px;
-}
-
-[class*="galset"] {
     margin: 20px;
+    border: 5px dashed #550cb7;
+}
+
+.galsites {
+    grid-area: 4 / 2 / 6 / 5;
+    background-color: #fbfbf9;
+    border-radius: 15px;
+    padding: 15px;
+    border: 5px dashed #550cb7;
+
+}
+
+.sumtro {
+    text-align: center;
 }

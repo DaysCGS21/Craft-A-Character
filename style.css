@@ -1,15 +1,35 @@
+h1 {
+    color: #fbfbf9
+}
+
+h2, h3 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 20pt;
+}
+
+p, li {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #550cb7;
+    padding: 0;
+    margin: 0;
+}
+
 .logo {
     text-align: center;
     padding: 5px;
     width: 99.35%;
   font-family: 'Averia Serif Libre', cursive;
   font-size: 40pt;
+    background-color: #444444;
   background-image: url(paperTexture.jpg);
     background-size: 100%;
 }
 
 nav.navi {
-    background-color: darkblue;
+    background-color: #550cb7;
     width: 100%;
     align-content: center;
     
@@ -30,7 +50,7 @@ nav.navi a {
   padding: 2em 3em;
   width: 50%;
   display: inline-block;  
-  color: white;
+  color: #FBFBF9;
   text-decoration: none;
   font-family: 'Averia Serif Libre', cursive;
   font-size: 16pt;
@@ -38,19 +58,21 @@ nav.navi a {
 }
 
 nav.navi a:hover {
-    background-color: dodgerblue;
-    color: darkblue;
+    background-color: #a7f043;
+    color: #444444;
     font-style: bold;
 }
 
-.homentro, .whatarc, .moredet, .ColorNtroduction, .styletitle, .makeintro, .gallintro, .feebkintro {
+.sumtro {
     padding: 30px;
     border-left-style: dashed;
     border-right-style: dashed;
+    background-color: #fbfbf9;
+    border-bottom: 3px dashed #550cb7
 }
 
-.cyc, .instructarc {
-    text-align: left;
+.cyc, .instructarc, #dos, #dont {
+    text-align: center;
     font-size: 30pt;
 }
 
@@ -65,8 +87,9 @@ nav.navi a:hover {
 .menuinstruct {
     padding: 30px;
     padding-top: 15px;
-    background-color: darkblue;
-    color:azure
+    background-color: #550cb7;
+    color:#fbfbf9;
+    border-bottom: 3px dashed #fbfbf9;
 }
 
 .menu {
@@ -75,6 +98,9 @@ nav.navi a:hover {
 grid-template-rows: repeat(6, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
+    background-color: #fbfbf9;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 [class*="info"] {
@@ -85,7 +111,8 @@ grid-row-gap: 0px;
 }
 
 .letsMake {
-    background-color: darkblue;
+    grid-area: 3 / 3 / 5 / 5;
+    background-color: #550cb7;
     padding: 5px;
     width: 200px;
     height: 200px;
@@ -95,104 +122,164 @@ grid-row-gap: 0px;
     justify-content: center;
     align-items: center;
     border: 4px solid;
-    border-color: azure;
-    color: azure;
-    grid-area: 3 / 3 / 5 / 5;
+    border-color: #550cb7;
+    color: #fbfbf9;
     align-self: center;
     justify-self: center;
 }
 
+
+
 .infoArchetype {
     border-right: 2px solid;
     border-bottom: 2px solid;
-    border-color: azure;
+    border-color: #550cb7;
     grid-area: 1 / 1 / 4 / 4;
+}
+
+.infoArchetype:hover {
+    background-image: url("Images/emblemsCircle-14.png");
+    background-position-y: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #140c19;
+    color: #a7f042;
 }
 
 .infoColor {
     border-left: 2px solid;
     border-bottom: 2px solid;
-    border-color: azure;
+    border-color: #550cb7;
     grid-area: 1 / 4 / 4 / 7;
+}
+
+.infoColor:hover {
+    background-image: url("Images/colorimage.png");
+    background-position-y: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #603813;
+    color: #a7f042;
 }
 
 .infoStyle {
     border-right: 2px solid;
     border-top: 2px solid;
-    border-color: azure;
+    border-color: #550cb7;
     grid-area: 4 / 1 / 7 / 4;
+}
+
+.infoStyle:hover {
+    background-image: url("goddess.png");
+    background-position-y: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #550cb7;
+    color: #a7f042;
+    border: 4px dashed #a7f042;
 }
 
 .infoDoNt {
     border-left: 2px solid;
     border-top: 2px solid;
-    border-color: azure;
+    border-color: #550cb7;
     grid-area: 4 / 4 / 7 / 7;
+}
+
+.infoDoNt:hover {
+    background-image: url("Images/yesno.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    color: #a7f042;
 }
 
 footer {
     text-align: center;
-    background-color: darkblue;
-    color: azure;
+    background-color: #550cb7;
     height: 50px;
     padding-top: 1px;
+    border-top: 3px dashed #fbfbf9;
+    color: #fbfbf9;
 }
 
 
-h2, h3 {
-    font-family: 'Averia Serif Libre', cursive;
-    font-size: 20pt;
-}
 
-p {
-    font-family: 'Lato', sans-serif;
-}
-
-h2, h3, p {
-    color: azure;
-}
-
-body {
-    background-color: darkslateblue;
-    padding: 0;
-    margin: 0;
-}
 
 .rcircle {
     display: grid;
-    grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(13, 1fr);
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+        margin-left: 100px;
+    margin-right: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #fbfbf9;
+    
 }
 
-.aH { grid-area: 2 / 7 / 3 / 8; }
-.aM { grid-area: 3 / 9 / 4 / 10; }
-.aJ { grid-area: 5 / 10 / 6 / 11; }
-.aRb { grid-area: 7 / 11 / 8 / 12; }
-.aI { grid-area: 9 / 10 / 10 / 11; }
-.aCg { grid-area: 11 / 9 / 12 / 10; }
-.aS { grid-area: 12 / 7 / 13 / 8; }
-.aEv { grid-area: 11 / 5 / 12 / 6; }
-.aRl { grid-area: 9 / 4 / 10 / 5; }
-.aCt { grid-area: 7 / 3 / 8 / 4; }
-.aL { grid-area: 5 / 4 / 6 / 5; }
-.aEx { grid-area: 3 / 5 / 4 / 6; }
+.aH { 
+    grid-area: 1 / 3 / 2 / 4;
+    color: #f15a29;
+}
+.aM { 
+    grid-area: 1 / 4 / 2 / 5;
+    color: #f7941d;
+}
+.aJ { 
+    grid-area: 2 / 5 / 3 / 6;
+    color: #fbb040;
+}
+.aRb { 
+    grid-area: 3 / 6 / 4 / 7;
+    color: #be1e2d;
+}
+.aI { 
+    grid-area: 4 / 6 / 5 / 7;
+    color: #00a651;
+}
+.aCg { 
+    grid-area: 6 / 4 / 7 / 5;
+    color: #00a79d;
+}
+.aS { 
+    grid-area: 6 / 3 / 7 / 4;
+    color: #009444;
+}
+.aEv { 
+    grid-area: 5 / 5 / 6 / 6;
+    color: #481267;
+}
+.aRl { 
+    grid-area: 5 / 2 / 6 / 3;
+    color: #262262;
+}
+.aCt { 
+    grid-area: 4 / 1 / 5 / 2;
+    color: #2e3192;
+}
+.aL { 
+    grid-area: 3 / 1 / 4 / 2;
+    color: #9e1f63;
+}
+.aEx { 
+    grid-area: 2 / 2 / 3 / 3;
+    color: #aeb551;
+}
 
 .emblem {
-    width: 150px;
+    width: 100%;
     height: auto;
 }
 
 [class^="a"] {
-   width: 150px;
-    height: auto;
+   width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: 1px solid;
+    margin: 10px;
     
 }
 .holder {
@@ -201,4 +288,55 @@ body {
     float: left;
     margin-right: 20px;
     
+}
+
+.insctruct1, #contrast1, .contbtn, .letsMake {
+    color: #fbfbf9;
+}
+
+.letsMake:hover {
+    background-color: #a7f042;
+    color: #550cb7;
+}
+
+h4, .darkhead, #pickcolor, #homehead, #whatarc, #thystyle, #treatro, #mkitro, #galtro, #saf {
+    color: #550cb7;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.darktxt {
+    color: #444444;
+}
+
+button {
+    background:    #a7f042;
+border-radius: 23px;
+padding:       20px 39px;
+color:         #fbfbf9;
+display:       inline-block;
+font:          normal bold 26px/1 'Averia Serif Libre', cursive;
+text-align:    center;
+}
+
+button:hover {
+    background:    #550cb7;
+border:        5px solid #a7f042;
+border-radius: 23px;
+padding:       20px 39px;
+color:         #a7f042;
+display:       inline-block;
+font:          normal bold 26px/1 "Open Sans", sans-serif;
+text-align:    center;
+}
+
+.sourceimg {
+    width: 300px;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sources {
+    padding: 30px;
+    color: #a7f042;
 }

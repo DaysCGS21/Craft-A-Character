@@ -6,48 +6,57 @@ grid-column-gap: 10px;
 grid-row-gap: 10px;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: darkorange;
+    background-color: #fbfbf9;
     padding: 15px;
 }
 
 .rcimage {
     grid-area: 1 / 1 / 7 / 5;
+    text-align: center;
     
 }
 
 .rcname {
     grid-area: 1 / 5 / 3 / 11;
+    border: 5px dashed #550cb7;
    
 }
 
 .rcdescr {
     grid-area: 3 / 5 / 7 / 11;
+
    
 }
 
 .qualities {
     grid-area: 7 / 1 / 9 / 6;
+
     
 }
 
 .flaws {
     grid-area: 7 / 6 / 9 / 11;
+
     
 }
 
 .rcslide {
     grid-area: 9 / 1 / 11 / 11;
     
+    
 }
 
-img {
-    width: 100px;
+.chibi {
+    width: 400px;
 }
 
-.emblem {
+.emblmpage {
     float:left;
     margin-right: 30px;
     padding-top: 20px;
+    display: block;
+    vertical-align: middle;
+    width: 25%;
 }
 
 #arctype {
@@ -58,12 +67,11 @@ img {
 
 [class*="rc"], .qualities, .flaws {
     border-radius: 15px;
-    background-color: #f7c76c;
     padding: 30px;
 }
 
 body {
-    background-color: #343333;
+    background-color: #550cb7;
 }
 
 .typesampl {
@@ -72,4 +80,58 @@ body {
   margin-right: auto;
     margin-top: 20px;
     margin-bottom: auto;
+}
+
+#hero1, #hero2, #hero3, #hero4 {
+    background-color: #fcbb76;
+}
+
+#mage1, #mage2, #mage3, #mage4 {
+    background-color: #f4ceb1;
+
+}
+
+#jest1, #jest2, #jest3, #jest4 {
+    background-color: #ffefae;
+}
+
+#explor1, #explor2, #explor3, #explor4 {
+       background-color: #e5ea87;
+ 
+}
+
+#crgvr1, #crgvr2, #crgvr3, #crgvr4 {
+    background-color: #aaddf3;
+}
+
+#evrymn1, #evrymn2, #evrymn3, #evrymn4 {
+       background-color: #a681ba;
+ 
+}
+
+#incnt1, #incnt2, #incnt3, #incnt4 {
+    background-color: #b4ddc0;
+}
+
+#love1, #love2, #love3, #love4 {
+      background-color: #f287b7;
+  
+}
+
+#rebel1, #rebel2, #rebel3, #rebel4 {
+    background-color: #f6937b;
+}
+
+#ruler1, #ruler2, #ruler3, #ruler4 {
+     background-color: #8973b4;
+   
+}
+
+#creat1, #creat2, #creat3, #creat4 {
+    background-color: #7d9fd3;
+}
+
+#sage1, #sage2, #sage3, #sage4 {
+     background-color: #92cd8b;
+   
 }
