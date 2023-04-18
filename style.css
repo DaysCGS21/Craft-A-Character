@@ -2,12 +2,12 @@ h1 {
     color: #fbfbf9
 }
 
-h2, h3 {
+h2, h3, label, th {
     font-family: 'Averia Serif Libre', cursive;
     font-size: 20pt;
 }
 
-p, li {
+p, li, td, textarea {
     font-family: 'Lato', sans-serif;
 }
 
@@ -170,7 +170,7 @@ grid-row-gap: 0px;
 }
 
 .infoStyle:hover {
-    background-image: url("goddess.png");
+    background-image: url("designer.jpg");
     background-position-y: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -312,7 +312,7 @@ button {
     background:    #a7f042;
 border-radius: 23px;
 padding:       20px 39px;
-color:         #fbfbf9;
+color:         #550cb7;
 display:       inline-block;
 font:          normal bold 26px/1 'Averia Serif Libre', cursive;
 text-align:    center;
@@ -325,7 +325,6 @@ border-radius: 23px;
 padding:       20px 39px;
 color:         #a7f042;
 display:       inline-block;
-font:          normal bold 26px/1 "Open Sans", sans-serif;
 text-align:    center;
 }
 
@@ -340,3 +339,23 @@ text-align:    center;
     padding: 30px;
     color: #a7f042;
 }
+
+a.menublocks, a.menublocks:visited {
+    color: #444444;
+    text-decoration: none;
+}
+
+a.menublocks:hover {
+    color: #a7f042;
+    text-decoration: none;
+}
+
+a.makego, a.makego:visited {
+    color: #fbfbf9;
+    text-decoration: none;
+}
+
+a.makego:hover {
+    color: #550cb7;
+}
+

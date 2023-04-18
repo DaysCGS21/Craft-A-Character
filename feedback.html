@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <title>Craft-A-Character</title>
         <link rel="stylesheet" href="style.css">
@@ -25,21 +25,54 @@
             <p class="darktxt">Here you can leave a comment to the website. It can be a critique based on the information that is provided here, a comment about any questions you have for the person who made this page, or any general comment you'd like to say. Please be respectful to others and keep free from political talk. This is all to have fun and to help eachother out.</p>
         </div>
     <div class="entrygrid">
-        <div class="options">
-            <ul>
-                <li class="butnr">Critic</li>
-                <li class="butnr">Comment</li>
-                <li class="butnr">General</li>
-            </ul>
-        </div>
+        
         <div class="entry">
-        <form><h2>Name</h2></form> <input><br><br>
+        <form id="commentsub" action="welcome.php" method="post">
+            <label for="Cmntname">Name</label><br><br>
+            <input type="text" id="Cmntname" name="Commentname"><br><br>
+            <ul class="radiolist">
+                <li>
+                    <input type="radio" id="critic" name="type-of-comment" value="CRITIC" class="but">
+                    <label for="Critic">Critic</label>
+                </li>
+                <li>
+                    <input type="radio" id="comment" name="type-of-comment" value="COMMENT">
+                    <label for="comment">Comment</label>
+                </li>
+                <li>
+                    <input type="radio" id="general" name="type-of-comment" value="GENERAL">
+                    <label for="general">General</label>
+                </li>
+            </ul>
+            </form><br>
         <h2>Comment</h2>
-        <textarea></textarea>
+        <textarea rows="10" cols="70" name="comment" form="commentsub">
+Enter text here...</textarea>
         </div>
         <div class="feedmit">
-            <button>submit</button>
+            <button type="submit" form="commentsub" value="Submit">Submit</button>
             </div>
+        <div class="contactTable">
+            <h2 id="contactor">Contact me</h2>
+            <table>
+                <tr>
+                    <th>Media</th>
+                    <th class="darkblock">Links</th>
+                </tr>
+                <tr>
+                    <td class="darkblock">Twitter</td>
+                    <td><a href="https://twitter.com/LigerDays">https://twitter.com/LigerDays</a></td>
+                </tr>
+                <tr>
+                    <td class="darkblock">Instagram</td>
+                    <td><a href="https://www.instagram.com/days_cgs/">https://www.instagram.com/days_cgs/</a></td>
+                </tr>
+                <tr>
+                    <td class="darkblock">YouTube</td>
+                    <td><a href="https://www.youtube.com/@daysyCGS21">https://www.youtube.com/@daysyCGS21</a></td>
+                </tr>
+            </table>
+        </div>
     </div>
 <footer>
         <p  class="contbtn">Craft-A-Character. Daysy Gutierrez. 2023</p>
