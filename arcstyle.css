@@ -1,19 +1,26 @@
+.separater {
+    border: 2px dashed #a7f042;
+}
+
 .racgrid {
     display: grid;
 grid-template-columns: repeat(10, 1fr);
-grid-template-rows: repeat(10, 1fr);
+grid-template-rows: repeat(9, 1fr);
 grid-column-gap: 10px;
 grid-row-gap: 10px;
     margin-left: 100px;
     margin-right: 100px;
     background-color: #fbfbf9;
     padding: 15px;
+    padding-bottom: 0;
 }
 
 .rcimage {
     grid-area: 1 / 1 / 7 / 5;
     text-align: center;
-    
+    padding-top: 100px;
+    padding: 70px 0;
+    max-height: 100%;
 }
 
 .rcname {
@@ -40,14 +47,18 @@ grid-row-gap: 10px;
     
 }
 
-.rcslide {
-    grid-area: 9 / 1 / 11 / 11;
-    
-    
+.end {
+    grid-area: 9 / 1 / 11 / 11;    
+    text-align: center;
+    height: 10px;
+    padding: 20px;
+    padding-bottom: 0;
 }
 
 .chibi {
-    width: 400px;
+    width: 80%;
+    height: auto;
+    margin-top: 20%;
 }
 
 .emblmpage {
@@ -83,7 +94,7 @@ body {
 }
 
 #hero1, #hero2, #hero3, #hero4 {
-    background-color: #fcbb76;
+    background-color: #FFCF9D;
 }
 
 #mage1, #mage2, #mage3, #mage4 {
@@ -105,7 +116,7 @@ body {
 }
 
 #evrymn1, #evrymn2, #evrymn3, #evrymn4 {
-       background-color: #a681ba;
+       background-color: #CBB2D9;
  
 }
 
@@ -114,24 +125,72 @@ body {
 }
 
 #love1, #love2, #love3, #love4 {
-      background-color: #f287b7;
+      background-color: #F9B3D3;
   
 }
 
 #rebel1, #rebel2, #rebel3, #rebel4 {
-    background-color: #f6937b;
+    background-color: #FFB7A6;
 }
 
 #ruler1, #ruler2, #ruler3, #ruler4 {
-     background-color: #8973b4;
+     background-color: #B3A2D3;
    
 }
 
 #creat1, #creat2, #creat3, #creat4 {
-    background-color: #7d9fd3;
+    background-color: #AAC5E9;
 }
 
 #sage1, #sage2, #sage3, #sage4 {
-     background-color: #92cd8b;
+     background-color: #BAE1B6;
    
+}
+
+.qualities h2, .flaws h2 {
+    color: #550cb7;
+}
+
+#arctype {
+    color: #444444;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .racgrid {
+        display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(6, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+        margin: 15px 0;
+    }
+    
+    .rcname { grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+    }
+    .rcimage { grid-area: 2 / 1 / 3 / 2;
+            width: 100%;
+}
+    .rcdescr { grid-area: 3 / 1 / 4 / 2;
+            width: 100%;
+}
+    .qualities { grid-area: 4 / 1 / 5 / 2;
+            width: 100%;
+}
+    .flaws { grid-area: 5 / 1 / 6 / 2;
+            width: 100%;
+}
+    .end { grid-area: 6 / 1 / 7 / 2;
+            width: 100%;
+}
+    
+    [class*="rc"], .qualities, .flaws {
+    border-radius: 15px;
+    padding: 30px;
+        margin: 10px;
+}
+
 }

@@ -1,7 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
     <head>
-        <title>Craft-A-Character</title>
+        <title>Craft Your Character</title>
+        <meta name="description" content="Here is a template to for you to practice creating your character.">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Character, Creation, Fictional, Making, Writing, Creating, Info, Template, Practice">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="makestyle.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,42 +28,139 @@
         <h1 class="cyc" id="mkitro">Create your Character</h1>
         <p class="darktxt">Are you ready to create your own Character? Here's the template to create your character sheet. Make sure to fill out each section of the page, which includes its basic info, Colors, Appearance, and Persona. If you need help on figuring out what options fit your character, feel free to check out the other pages. Otherwise, have fun and be creative!</p>
         </div>
+        <form action="character.php" name="charactertemplate">
         <div class="templategrid">
             <div class="basic">
                 <h2 class="temphead">Basic</h2>
-                <h3 class="darkhead">Gender</h3>
-                <h3 class="darkhead">Age</h3>
-                <h3 class="darkhead">Race/Species</h3>
+                <table>
+                    <tr>
+                        <td><h4>Name</h4></td>
+                        <td><input type="text" name="cname"></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Age</h4></td>
+                        <td><input type="text" name="age"></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Gender</h4></td>
+                        <td><input type="text" name="gender"></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Species/Race</h4></td>
+                        <td><input type="text" name="age"></td>
+                    </tr>
+                </table>
+
             </div>
             <div class="colr">
                 <h2 class="temphead">Color</h2>
-                <h3 class="darkhead">Hair</h3>
-                <h3 class="darkhead">Skin</h3>
-                <h3 class="darkhead">Eyes</h3>
-                <h3 class="darkhead">Signature Colors</h3>
+                <table>
+                    <tr>
+                        <td><h4>Hair Color</h4></td>
+                        <td><input type="text" name="haircolor"></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Eye Color</h4></td>
+                        <td><input type="text" name="eyecolor1"></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Skin Color</h4></td>
+                        <td><input type="text" name="skincolor"></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Signature Colors</h4></td>
+                        <td>
+                            <input type="text" name="primarycolor">
+                            <input type="text" name="secondarycolor">
+                            <input type="text" name="triatarycolor">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Here's a Color Picker to help you</h4></td>
+                        <td><input type="color" name="picker"></td>
+                    </tr>
+                </table> 
             </div>
             <div class="stylo">
                 <h2 class="temphead">Style</h2>
-                <h3 class="darkhead">Clothing Description</h3>
-                
-                <h3 class="darkhead">upload placeholder</h3>
+                <table>
+                    <tr>
+                        <td><h4>Description</h4></td>
+                        <td><input type="text" name="looksdesc" id="outbast"></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Reference</h4></td>
+                        <td><input type="file" name="reference" id="ref"></td>
+                    </tr>
+                </table>
             </div>
             <div class="persna">
                 <h2 class="temphead">Persona</h2>
-                <h3 class="darkhead">Archetype(s)</h3>
-                <h3 class="darkhead">Personality</h3>
-                <h3 class="darkhead">Quirks</h3>
-                <h3 class="darkhead">Flaws</h3>
+                <table>
+                    <tr>
+                        <td><h4>Archetype(s)</h4></td>
+                        <td><select id="arch1" name="archetype1">
+                        <option value="hero">Hero</option>
+                        <option value="mage">Mage</option>
+                        <option value="jester">Jester</option>
+                        <option value="rebel">Rebel</option>
+                        <option value="innocent">Innocent</option>
+                        <option value="caregiver">Caregiver</option>
+                        <option value="sage">Sage</option>
+                        <option value="everyman">Everyman</option>
+                        <option value="creator">Creator</option>
+                        <option value="ruler">Ruler</option>
+                        <option value="lover">Lover</option>
+                        <option value="explorer">Explorer</option>
+                </select>
+                <select id="arch2" name="archetype2">
+                        <option value="void">None</option>
+                        <option value="hero">Hero</option>
+                        <option value="mage">Mage</option>
+                        <option value="jester">Jester</option>
+                        <option value="rebel">Rebel</option>
+                        <option value="innocent">Innocent</option>
+                        <option value="caregiver">Caregiver</option>
+                        <option value="sage">Sage</option>
+                        <option value="everyman">Everyman</option>
+                        <option value="creator">Creator</option>
+                        <option value="ruler">Ruler</option>
+                        <option value="lover">Lover</option>
+                        <option value="explorer">Explorer</option>
+                </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Personality</h4></td>
+                        <td><input type="text" name="prsn"></td>
+                    </tr>
+                    <tr>
+                        <td><h4 id="Q">Quirks</h4></td>
+                        <td>
+                            <input type="text" name="quirk1"><br>
+                            <input type="text" name="quirk2"><br>
+                            <input type="text" name="quirk3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4 id="F">Flaws</h4></td>
+                        <td>
+                            <input type="text" name="flaw1"><br>
+                            <input type="text" name="flaw2"><br>
+                            <input type="text" name="flaw3">
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="backsto">
             <h2 class="temphead">Backstory</h2>
-            <textarea></textarea>
+            <textarea name="backstory" rows="10" cols="80"></textarea>
         </div>
         <div class="submit">
-            <button>Submit</button>
+            <input type="submit" name="Submit" id="subutton" value="Submit">
         </div>
         </div>
-        
+      </form>  
 <footer>
         <p  class="contbtn">Craft-A-Character. Daysy Gutierrez. 2023</p>
         </footer>

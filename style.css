@@ -1,5 +1,6 @@
 h1 {
-    color: #fbfbf9
+    color: #fbfbf9;
+    font-size: 80pt;
 }
 
 h2, h3, label, th {
@@ -30,15 +31,15 @@ body {
 
 nav.navi {
     background-color: #550cb7;
-    width: 100%;
-    align-content: center;
-    
+    width: 100%;    
 }
 nav.navi ul {
   list-style: none;
   margin: 0;
   padding: 0;
   overflow: auto;
+      text-align: center;
+
 }
 
 nav.navi li {
@@ -48,7 +49,7 @@ nav.navi li {
 
 nav.navi a {
   padding: 2em 3em;
-  width: 50%;
+  min-width: 250px;
   display: inline-block;  
   color: #FBFBF9;
   text-decoration: none;
@@ -65,10 +66,12 @@ nav.navi a:hover {
 
 .sumtro {
     padding: 30px;
-    border-left-style: dashed;
-    border-right-style: dashed;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-left-style: 1px dashed #550cb7;
+    border-right-style: 1px dashed #550cb7;
     background-color: #fbfbf9;
-    border-bottom: 3px dashed #550cb7
+    border-bottom: 3px dashed #550cb7;
 }
 
 .cyc, .instructarc, #dos, #dont {
@@ -90,6 +93,7 @@ nav.navi a:hover {
     background-color: #550cb7;
     color:#fbfbf9;
     border-bottom: 3px dashed #fbfbf9;
+    text-align: center;
 }
 
 .menu {
@@ -105,7 +109,7 @@ grid-row-gap: 0px;
 
 [class*="info"] {
     text-align: center;
-    height: 400px;
+    height: 500px;
     padding: 100px;
     padding-top: 200px;
 }
@@ -176,7 +180,6 @@ grid-row-gap: 0px;
     background-repeat: no-repeat;
     background-color: #550cb7;
     color: #a7f042;
-    border: 4px dashed #a7f042;
 }
 
 .infoDoNt {
@@ -209,16 +212,22 @@ footer {
 
 .rcircle {
     display: grid;
-grid-template-columns: repeat(6, 1fr);
-grid-template-rows: repeat(6, 1fr);
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
-        margin-left: 100px;
+    margin-left: 100px;
     margin-right: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #fbfbf9;
     
+}
+
+.rcircle [class^="a"] {
+    width: 75%;
+    margin: 20px;
+    padding-top: 15%;
 }
 
 .aH { 
@@ -230,44 +239,76 @@ grid-row-gap: 0px;
     color: #f7941d;
 }
 .aJ { 
-    grid-area: 2 / 5 / 3 / 6;
+    grid-area: 4 / 4 / 5 / 5;
     color: #fbb040;
 }
 .aRb { 
-    grid-area: 3 / 6 / 4 / 7;
+    grid-area: 2 / 4 / 3 / 5;
     color: #be1e2d;
 }
 .aI { 
-    grid-area: 4 / 6 / 5 / 7;
+    grid-area: 2 / 1 / 3 / 2;
     color: #00a651;
 }
 .aCg { 
-    grid-area: 6 / 4 / 7 / 5;
+    grid-area: 4 / 2 / 5 / 3;
     color: #00a79d;
 }
 .aS { 
-    grid-area: 6 / 3 / 7 / 4;
+    grid-area: 1 / 1 / 2 / 2;
     color: #009444;
 }
 .aEv { 
-    grid-area: 5 / 5 / 6 / 6;
+    grid-area: 4 / 3 / 5 / 4;
     color: #481267;
 }
 .aRl { 
-    grid-area: 5 / 2 / 6 / 3;
+    grid-area: 4 / 1 / 5 / 2;
     color: #262262;
 }
 .aCt { 
-    grid-area: 4 / 1 / 5 / 2;
+    grid-area: 3 / 1 / 4 / 2;
     color: #2e3192;
 }
 .aL { 
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 3 / 4 / 4 / 5;
     color: #9e1f63;
 }
 .aEx { 
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 1 / 2 / 2 / 3;
     color: #aeb551;
+}
+
+.mark {
+    grid-area: 2 / 3 / 3 / 4;
+   border-bottom: 2px solid #550cb7;
+    border-left: 2px solid #550cb7;
+    text-align: center;
+    padding: 50% 5%;
+}
+
+.connect {
+    grid-area: 3 / 3 / 4 / 4;
+   border-top: 2px solid #550cb7;
+    border-left: 2px solid #550cb7;
+    text-align: center;
+    padding: 50% 5%;
+}
+
+.provide {
+    grid-area: 3 / 2 / 4 / 3;
+    border-top: 2px solid #550cb7;
+    border-right: 2px solid #550cb7;
+    text-align: center;
+    padding: 50% 5%;
+}
+
+.journey {
+    grid-area: 2 / 2 / 3 / 3;
+    border-bottom: 2px solid #550cb7;
+    border-right: 2px solid #550cb7;
+    text-align: center;
+    padding: 50% 5%;
 }
 
 .emblem {
@@ -275,13 +316,6 @@ grid-row-gap: 0px;
     height: auto;
 }
 
-[class^="a"] {
-   width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 10px;
-    
-}
 .holder {
     height: 300px;
     width: auto;
@@ -337,11 +371,13 @@ text-align:    center;
 
 .sources {
     padding: 30px;
+    padding-top: 20px;
     color: #a7f042;
+    border-top: 2px dashed #a7f042;
 }
 
 a.menublocks, a.menublocks:visited {
-    color: #444444;
+    color: #550cb7;
     text-decoration: none;
 }
 
@@ -358,4 +394,154 @@ a.makego, a.makego:visited {
 a.makego:hover {
     color: #550cb7;
 }
+
+#sourcehead {
+    color: #a7f042;
+    margin: 0;
+}
+
+.sources p {
+    padding-left: 24px;
+}
+
+h4 {
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 40pt;
+    }
+    
+    body {
+        width: 100%;
+    }
+    
+    h2, h3, label, th {
+        font-size: 20pt;
+    }
+    
+    p {
+        font-size: 10pt;
+    }
+    
+    .menublocks {
+        width: 100%;
+    }
+    
+    nav.navi li {
+    float: left;
+    width: 100%;
+    }
+    
+    .menu, .rcircle, [class$="grid"] {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu div, .rcircle div, [class$="grid"] div {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .menu {
+        grid-template-rows: repeat(5, 1fr);
+        
+    }
+    
+    .infoArchetype {
+        grid-area: 1 / 1 / 2 / 2;
+        border: 2px solid #550cb7;
+        
+    }
+    
+    .infoColor {
+        grid-area: 2 / 1 / 3 / 2;
+        border: 2px solid #550cb7;
+    }
+    
+    .infoStyle {
+        grid-area: 3 / 1 / 4 / 2;
+        border: 2px solid #550cb7;
+    }
+    
+    .infoDoNt {
+        grid-area: 4 / 1 / 5 / 2;
+        border: 2px solid #550cb7;
+    }
+    
+    .letsMake {
+        grid-area: 5 / 1 / 6 / 2;
+        
+    }
+    
+      .rcircle {
+        grid-template-rows: repeat(13, 1fr);
+        width: 100%;
+    }
+    
+    .mark { 
+        grid-area: 1 / 1 / 2 / 2; 
+        width: 100%;
+        border: 2px solid #550cb7;
+        text-align: center;
+        padding: 50% 5%;
+        height: 10%;
+        }
+    .aH { grid-area: 2 / 1 / 3 / 2;
+        margin: 0;
+    }
+    .aM { grid-area: 3 / 1 / 4 / 2; }
+    .aRb { grid-area: 4 / 1 / 5 / 2; }
+    .connect { 
+        grid-area: 5 / 1 / 6 / 2;
+        width: 100%;
+        border: 2px solid #550cb7;
+        text-align: center;
+        padding: 50% 5%;
+        height: 10%;
+        }
+    .aL { grid-area: 6 / 1 / 7 / 2; }
+    .aJ { grid-area: 7 / 1 / 8 / 2; }
+    .aEv { grid-area: 8 / 1 / 9 / 2; }
+    .provide { 
+        grid-area: 9 / 1 / 10 / 2;
+        width: 100%;
+        border: 2px solid #550cb7;
+        text-align: center;
+        padding: 50% 5%;
+        height: 10%;
+        }
+    .Cg { grid-area: 10 / 1 / 11 / 2; }
+    .aRl { grid-area: 11 / 1 / 12 / 2; }
+    .aCt { grid-area: 12 / 1 / 13 / 2; }
+    .journey { 
+        grid-area: 13 / 1 / 14 / 2;
+        width: 100%;
+        border: 2px solid #550cb7;
+        text-align: center;
+        padding: 50% 5%;
+        height: 10%;
+        }
+    .aI { grid-area: 14 / 1 / 15 / 2; }
+    .aS { grid-area: 15 / 1 / 16 / 2; }
+    .aEx { grid-area: 16 / 1 / 17 / 2; }
+    
+    
+    }
+
+@media only screen and (max-width: 800px) {
+    
+    div {
+        width: 100%;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+}
+
 

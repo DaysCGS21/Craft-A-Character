@@ -17,6 +17,8 @@ margin-left: 100px;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 15px;
+    height: 800px;
+    overflow-y: scroll
 }
 
 .dont-column {
@@ -27,9 +29,35 @@ margin-left: 100px;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 15px;
+    height: 800px;
+    overflow-y: scroll;
 }
 
 .dotitle {
     background-color: #550cb7;
     border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .paregrid {
+        display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+        margin: 15px 0;
+    }
+    
+    .dos-column { grid-area: 1 / 1 / 2 / 2;
+        margin: 15px;
+        width: 100%;
+    }
+    .dont-column { grid-area: 2 / 1 / 3 / 2;
+        margin: 15px;
+        width: 100%;
+    }
+    
 }

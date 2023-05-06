@@ -1,7 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
     <head>
-        <title>Craft-A-Character</title>
+        <title>Provdie Feedback</title>
+        <meta name="description" content="Here you can provide feedback for the site and the its creator. It can be a critique, a comment, or other.">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Feedback, Comment, Critic, Character, Creation, Info">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="feedstyle.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +31,7 @@
     <div class="entrygrid">
         
         <div class="entry">
-        <form id="commentsub" action="welcome.php" method="post">
+        <form id="commentsub" action="postlog.php" method="post">
             <label for="Cmntname">Name</label><br><br>
             <input type="text" id="Cmntname" name="Commentname"><br><br>
             <ul class="radiolist">
@@ -46,8 +50,7 @@
             </ul>
             </form><br>
         <h2>Comment</h2>
-        <textarea rows="10" cols="70" name="comment" form="commentsub">
-Enter text here...</textarea>
+        <textarea rows="10"  name="comment" form="commentsub"></textarea>
         </div>
         <div class="feedmit">
             <button type="submit" form="commentsub" value="Submit">Submit</button>

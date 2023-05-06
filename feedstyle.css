@@ -6,17 +6,7 @@ grid-column-gap: 10px;
 grid-row-gap: 0px;
 margin: 15px; 
 margin-right: 100px;
-margin-left: 100px;  
-}
-
-///.options {
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fbfbf9;
-    border-radius: 15px;
-    padding: 15px;
-    height: 100px;
+margin-left: 100px;
 }
 
 .entry {
@@ -26,8 +16,8 @@ margin-left: 100px;
     margin-right: auto;
     background-color: #fbfbf9;
     border-radius: 15px;
-    padding: 15px;
-    width: 600px;
+    padding: 30px;
+     width: inherit;
 }
 
 .feedmit {
@@ -38,17 +28,20 @@ margin-left: 100px;
     background-color: #fbfbf9;
     border-radius: 15px;
     padding: 15px;
-    height: 80px;
+    height: auto;
+    width: auto;
 }
 
 .contactTable {
     grid-area: 1 / 4 / 6 / 6;
-     margin: auto;
-       margin-left: auto;
+     margin: 10px;
+       margin-left: 20px;
     margin-right: auto;
     background-color: #fbfbf9;
     border-radius: 15px;
     text-align: center;
+     width: inherit;
+    height: 45%;
 }
 
 ul.radiolist {
@@ -57,6 +50,7 @@ ul.radiolist {
   padding: 0;
   overflow: hidden;
     display: inline-block;
+    width: 100%;
     
 }
 
@@ -95,6 +89,7 @@ ul.radiolist li {
 table {
     margin: 20px;
     border: 2px solid #550cb7;
+    width: 100%:
 }
 
 th, td {
@@ -120,4 +115,36 @@ th, td {
     background-color: #550cb7;
     color: #fbfbf9;
 
+}
+
+textarea {
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .entrygrid {
+        display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+        margin: 15px 0;
+    }
+    
+    .contactTable { grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        height: auto;
+    }
+    .entry { grid-area: 2 / 1 / 3 / 2;
+        width: 100%;
+        height: auto;
+    }
+    .feedmit { grid-area: 3 / 1 / 4 / 2;
+        width: 100%;
+        height: auto;
+    }
+    
 }

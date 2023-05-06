@@ -1,24 +1,36 @@
 .stylegrid {
    display: grid;
-grid-template-columns: 2fr repeat(5, 1fr);
-grid-template-rows: repeat(8, 1fr);
-grid-column-gap: 10px;
-grid-row-gap: 10px; 
-margin-left: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 100px;
     margin-right: 100px;
     padding: 15px;
 }
 
 .model {
-    grid-area: 1 / 1 / 9 / 2;
+    grid-area: 1 / 1 / 5 / 4;
     border-radius: 15px;
     border: 3px dashed #550cb7;
         background-color: #fbfbf9;
+    width: 100%;
+    height: auto;
 
 }
 
-.hair {
-    grid-area: 1 / 3 / 3 / 6;
+.taphair {
+    grid-area: 1 / 4 / 2 / 5;
+    border: 3px dashed #550cb7;
+    border-radius: 15px;
+    padding: 20px;
+        background-color: #fbfbf9;
+    height: 70px;
+    text-align: center;
+}
+
+.tapColors {
+    grid-area: 2 / 4 / 3 / 5;
     border: 3px dashed #550cb7;
     border-radius: 15px;
     padding: 20px;
@@ -26,8 +38,8 @@ margin-left: 100px;
 
 }
 
-.Colors {
-    grid-area: 3 / 4 / 5 / 7;
+.tapClothing {
+    grid-area: 3 / 4 / 4 / 5;
     border: 3px dashed #550cb7;
     border-radius: 15px;
     padding: 20px;
@@ -35,17 +47,8 @@ margin-left: 100px;
 
 }
 
-.Clothing {
-    grid-area: 5 / 3 / 7 / 6;
-    border: 3px dashed #550cb7;
-    border-radius: 15px;
-    padding: 20px;
-        background-color: #fbfbf9;
-
-}
-
-.Features {
-    grid-area: 7 / 4 / 9 / 7;
+.tapFeatures {
+    grid-area: 4 / 4 / 5 / 5;
     border: 3px dashed #550cb7;
     border-radius: 15px;
     padding: 20px;
@@ -54,16 +57,76 @@ margin-left: 100px;
 }
 
 .stylemodel {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 15px;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: auto;
+    padding: 20px;
 }
 
 a {
     text-decoration: inherit;
+}
+
+[class^="tap"] {
+    position: relative;
+    display: inline-block;
+        height: 70px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    float: right;
+    margin: 30px;
+}
+
+.droptxt {
+    display: none;
+    position: absolute;
+    background-color: #fbfbf9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    text-align: left;
+    width: 300px;
+    border: 3px dashed #550cb7;
+    border-radius: 15px;
+}
+
+[class^="tap"]:hover .droptxt {
+    display: block;
+}
+
+.stylehead {
+    font-size: 30px;
+    color: #550cb7;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .stylegrid {
+        display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    }
+    
+    .model { grid-area: 1 / 1 / 2 / 2; }
+.taphair { grid-area: 2 / 1 / 3 / 2; }
+.tapColors { grid-area: 3 / 1 / 4 / 2; }
+.tapClothing { grid-area: 4 / 1 / 5 / 2; }
+.tapFeatures { grid-area: 5 / 1 / 6 / 2; }
+    
+    .droptxt {
+    background-color: #fbfbf9;
+    min-width: 160px;
+    padding: 12px 16px;
+    text-align: left;
+    width: 100%;
+    border: 3px dashed #550cb7;
+    border-radius: 15px;
+}
+    
 }
